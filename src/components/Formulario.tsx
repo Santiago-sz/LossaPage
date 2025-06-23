@@ -50,7 +50,7 @@ const Formulario: React.FC = () => {
 
   const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
-    alert(`${label} copiado al portapapeles`);
+    alert(`${label} copiat al porta-retalls`);
   };
 
   return (
@@ -86,7 +86,7 @@ const Formulario: React.FC = () => {
                 placeholder="WhatsApp"
                 required
                 pattern="[0-9]+"
-                title="Solo se permiten números"
+                title="Només es permeten números"
               />
             </div>
             <div className="input-group">
