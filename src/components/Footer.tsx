@@ -7,14 +7,14 @@ const Footer: React.FC = () => {
       <div className="footer-row">
         {/* Texto de copyright */}
         <span>
-          &copy; {new Date().getFullYear()}, L’ossa bàsquet. Todos los derechos
-          reservados.
+          &copy; {new Date().getFullYear()}, L’ossa bàsquet. Tots els drets
+          reservats.
         </span>
 
         {/* Desarrollador + Logos */}
         <div className="footer-dev">
           <span>
-            Desarrollado por{" "}
+            Desenvolupat per{" "}
             <a
               href="https://quadracode.vercel.app/"
               target="_blank"
