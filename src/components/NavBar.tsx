@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import "../styles/Navbar.css";
+import "../styles/NavBar.css";
 import "../styles/Botones.css";
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
