@@ -16,14 +16,14 @@ const Formulario: React.FC = () => {
 
     try {
       await sendContactMessage({ nombre, email, telefono, mensaje });
-      alert("Mensaje enviado correctamente 🚀");
+      alert("Missatge enviat correctament 🚀");
       setName("");
       setEmail("");
       setNumber("");
       setMessage("");
     } catch (error) {
-      console.error("Error en el envío del formulario:", error);
-      alert("Hubo un error al enviar el mensaje. Intentá de nuevo.");
+      console.error("Error en l'enviament del formulari:", error);
+      alert("Hi va haver un error en enviar el missatge. Torna a intentar.");
     }
   };
 
@@ -36,9 +36,9 @@ const Formulario: React.FC = () => {
     },
     {
       icon: <FaPhoneAlt className="icon" />,
-      text: "+376 665 756",
+      text: "+376 669363",
       type: "copy",
-      action: "+376 665 756",
+      action: "+376 669363",
     },
     {
       icon: <FaEnvelope className="icon" />,
@@ -50,7 +50,7 @@ const Formulario: React.FC = () => {
 
   const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
-    alert(`${label} copiado al portapapeles`);
+    alert(`${label} copiat al porta-retalls`);
   };
 
   return (
@@ -58,14 +58,14 @@ const Formulario: React.FC = () => {
       <div className="container">
         {/* Sección del Formulario */}
         <div className="form-container">
-          <h1 className="titulo">¡Contáctanos!</h1>
+          <h1 className="titulo">¡Contacta'ns!</h1>
           <form onSubmit={handleSubmit}>
             <div className="input-group">
               <input
                 type="text"
                 value={nombre}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Nombre"
+                placeholder="Nom"
                 required
               />
             </div>
@@ -74,7 +74,7 @@ const Formulario: React.FC = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Correo electrónico"
+                placeholder="Correu electrònic"
                 required
               />
             </div>
@@ -86,7 +86,7 @@ const Formulario: React.FC = () => {
                 placeholder="WhatsApp"
                 required
                 pattern="[0-9]+"
-                title="Solo se permiten números"
+                title="Només es permeten números"
               />
             </div>
             <div className="input-group">
@@ -94,7 +94,7 @@ const Formulario: React.FC = () => {
                 rows={4}
                 value={mensaje}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Déjanos tu mensaje"
+                placeholder="Deixa'ns el teu missatge"
                 required
               />
             </div>
@@ -106,7 +106,7 @@ const Formulario: React.FC = () => {
 
         {/* Sección de Información */}
         <div className="info-container">
-          <h2 className="info-title">Nuestra sede</h2>
+          <h2 className="info-title">La nostra seu</h2>
           {infoItems.map((item, index) => (
             <motion.div
               className="info-item"
