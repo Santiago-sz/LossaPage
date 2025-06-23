@@ -54,91 +54,93 @@ const Formulario: React.FC = () => {
   };
 
   return (
-    <div className="container">
-      {/* Sección del Formulario */}
-      <div className="form-container">
-        <h1 className="titulo">¡Contáctanos!</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="input-group">
-            <input
-              type="text"
-              value={nombre}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Nombre"
-              required
-            />
-          </div>
-          <div className="input-group">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Correo electrónico"
-              required
-            />
-          </div>
-          <div className="input-group">
-            <input
-              type="tel"
-              value={telefono}
-              onChange={(e) => setNumber(e.target.value)}
-              placeholder="WhatsApp"
-              required
-              pattern="[0-9]+"
-              title="Solo se permiten números"
-            />
-          </div>
-          <div className="input-group">
-            <textarea
-              rows={4}
-              value={mensaje}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Déjanos tu mensaje"
-              required
-            />
-          </div>
-          <button type="submit" className="btn btn-enviar">
-            Enviar
-          </button>
-        </form>
-      </div>
+    <section id="contacto">
+      <div className="container">
+        {/* Sección del Formulario */}
+        <div className="form-container">
+          <h1 className="titulo">¡Contáctanos!</h1>
+          <form onSubmit={handleSubmit}>
+            <div className="input-group">
+              <input
+                type="text"
+                value={nombre}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div className="input-group">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Correo electrónico"
+                required
+              />
+            </div>
+            <div className="input-group">
+              <input
+                type="tel"
+                value={telefono}
+                onChange={(e) => setNumber(e.target.value)}
+                placeholder="WhatsApp"
+                required
+                pattern="[0-9]+"
+                title="Solo se permiten números"
+              />
+            </div>
+            <div className="input-group">
+              <textarea
+                rows={4}
+                value={mensaje}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Déjanos tu mensaje"
+                required
+              />
+            </div>
+            <button type="submit" className="btn btn-enviar">
+              Enviar
+            </button>
+          </form>
+        </div>
 
-      {/* Sección de Información */}
-      <div className="info-container">
-        <h2 className="info-title">Nuestra sede</h2>
-        {infoItems.map((item, index) => (
-          <motion.div
-            className="info-item"
-            key={index}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: index * 0.3, duration: 0.5 }}
-          >
-            {item.icon}
-            {item.type === "link" ? (
-              <a
-                href={item.action}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="info-text"
-              >
-                {item.text}
-              </a>
-            ) : (
-              <button
-                type="button"
-                className="info-text"
-                style={{ background: "transparent" }}
-                onClick={() => copyToClipboard(item.action, item.text)}
-              >
-                {item.text}
-              </button>
-            )}
-          </motion.div>
-        ))}
+        {/* Sección de Información */}
+        <div className="info-container">
+          <h2 className="info-title">Nuestra sede</h2>
+          {infoItems.map((item, index) => (
+            <motion.div
+              className="info-item"
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ delay: index * 0.3, duration: 0.5 }}
+            >
+              {item.icon}
+              {item.type === "link" ? (
+                <a
+                  href={item.action}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="info-text"
+                >
+                  {item.text}
+                </a>
+              ) : (
+                <button
+                  type="button"
+                  className="info-text"
+                  style={{ background: "transparent" }}
+                  onClick={() => copyToClipboard(item.action, item.text)}
+                >
+                  {item.text}
+                </button>
+              )}
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
