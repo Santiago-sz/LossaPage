@@ -1,0 +1,133 @@
+.navbar {
+  height: 74px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  color: white;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.navbar.scrolled {
+  background-color: rgba(10, 17, 80, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-container {
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.navbar-logo-img {
+  margin-right: auto -90px;
+  height: 82px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a[href="#contacto"] {
+  background-color: #ec4899;
+  color: white;
+}
+
+.navbar-links a[href="#contacto"]:hover {
+  background-color: #db2777;
+}
+
+.navbar-links a[href="#indumentaria"] {
+  background-color: #f1f1f1;
+  color: #1e293b;
+  border: 1px solid #d1d5db;
+}
+
+.navbar-links a[href="#indumentaria"]:hover {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  color: white;
+  padding: 2rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mobile-menu-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.mobile-menu-links a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}

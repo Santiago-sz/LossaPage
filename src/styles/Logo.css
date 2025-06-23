@@ -1,0 +1,90 @@
+.hero-background {
+  background-image: url("/lossaFondo-logo-Photoroom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-container {
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  user-select: none;
+}
+
+.logo {
+  max-width: 100%;
+  width: 110vw;
+  pointer-events: none;
+  outline: none;
+  user-select: none;
+  height: auto;
+  animation: fadeInZoom 1s ease-out, pulse 5s ease-in-out infinite;
+}
+
+/* Animaciones */
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.7);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-background {
+    background-image: url("/FondoMobile.png");
+  }
+  .logo {
+    width: 240vw;
+    max-width: none;
+  }
+
+  @keyframes fadeInZoomMobile {
+    from {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    to {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+  }
+
+  @keyframes pulseMobile {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+}
