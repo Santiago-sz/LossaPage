@@ -2,17 +2,24 @@
 <html lang="ca">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/PestañaLogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="Y76t4AarKrguz2OtZHY0hQldWm0TOAlcCS96lE5xZ74"
-    />
-    <title>L'ossa Basquet</title>
+
+    <title>L'ossa Bàsquet</title>
     <meta
       name="description"
       content="Pàgina oficial de L’ossa bàsquet. Troba informació del club, contacta amb nosaltres i descobreix la nostra indumentària."
     />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/PestañaLogo.png" />
+
+    <!-- Google Search Console -->
+    <meta
+      name="google-site-verification"
+      content="Y76t4AarKrguz2OtZHY0hQldWm0TOAlcCS96lE5xZ74"
+    />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="L’ossa bàsquet" />
     <meta
       property="og:description"
@@ -21,16 +28,38 @@
     <meta property="og:image" content="https://lossabasquet.com/logo.png" />
     <meta property="og:url" content="https://lossabasquet.com" />
     <meta property="og:type" content="website" />
+
+    <!-- Datos estructurados: Organization -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "L’ossa bàsquet",
         "url": "https://lossabasquet.com",
-        "logo": "https://lossabasquet.com/logo.png"
+        "logo": "https://lossabasquet.com/PestañaLogo.png",
+        "sameAs": [
+          "https://www.instagram.com/lossabasquet",
+          "https://www.facebook.com/lossabasquet"
+        ]
+      }
+    </script>
+
+    <!-- Datos estructurados: WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "L’ossa bàsquet",
+        "url": "https://lossabasquet.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://lossabasquet.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
