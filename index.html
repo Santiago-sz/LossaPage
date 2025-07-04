@@ -9,9 +9,11 @@
       name="description"
       content="Pàgina oficial de L’ossa bàsquet. Troba informació del club, contacta amb nosaltres i descobreix la nostra indumentària."
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lossabasquet.com/" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/PestañaLogo.png" />
+    <link rel="icon" type="image/png" href="/LogoPestana.png" />
 
     <!-- Google Search Console -->
     <meta
@@ -27,7 +29,7 @@
     />
     <meta
       property="og:image"
-      content="https://lossabasquet.com/PestañaLogo.png"
+      content="https://lossabasquet.com/LogoPestana.png"
     />
     <meta property="og:url" content="https://lossabasquet.com" />
     <meta property="og:type" content="website" />
@@ -39,11 +41,8 @@
         "@type": "Organization",
         "name": "L’ossa bàsquet",
         "url": "https://lossabasquet.com",
-        "logo": "https://lossabasquet.com/PestañaLogo.png",
-        "sameAs": [
-          "https://www.instagram.com/lossabasquet",
-          "https://www.facebook.com/lossabasquet"
-        ]
+        "logo": "https://lossabasquet.com/LogoPestana.png",
+        "sameAs": ["https://www.instagram.com/lossabasquet"]
       }
     </script>
 
@@ -65,6 +64,33 @@
 
   <body>
     <div id="root"></div>
+    <noscript>
+      <style>
+        .noscript-fallback {
+          padding: 2rem;
+          font-family: sans-serif;
+          color: #333;
+          max-width: 600px;
+          margin: 2rem auto;
+          background: #fff;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+        }
+        .noscript-fallback img {
+          max-width: 100px;
+          margin-bottom: 1rem;
+        }
+      </style>
+      <div class="noscript-fallback">
+        <img src="/LogoPestana.png" alt="Logo de L'ossa Bàsquet" />
+        <h1>L’ossa Bàsquet</h1>
+        <p>
+          Pàgina oficial de L’ossa bàsquet. Troba informació del club, contacta
+          amb nosaltres i descobreix la nostra indumentària.
+        </p>
+        <p>Si us plau, activa JavaScript per veure el lloc complet.</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
