@@ -23,6 +23,7 @@ export const metadata: Metadata = {
       { url: "/favicon.ico" },
       { url: "/LogoPestana.png", type: "image/png", sizes: "32x32" },
     ],
+    shortcut: [{ url: "/favicon.ico" }],
   },
   openGraph: {
     title: "L’OSSA Bàsquet",
@@ -35,10 +36,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://lossabasquet.com"),
   alternates: {
-    canonical: "/",
-  },
-  other: {
-    "google-site-verification": "Y76t4AarKrguz2OtZHY0hQldWm0TOAlcCS96lE5xZ74",
+    canonical: "https://www.lossabasquet.com/",
   },
 };
 
