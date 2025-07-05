@@ -35,8 +35,8 @@ const Footer: React.FC = () => {
               <Image
                 src="/logo.png"
                 alt="Logo QuadraCode"
-                width={150} // Ajustá según tu diseño
-                height={50} // Ajustá según tu diseño
+                width={150}
+                height={50}
                 className="footer-logo"
               />
             </a>

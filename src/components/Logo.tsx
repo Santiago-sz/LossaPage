@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "../styles/Logo.css"; // o .module.css si usás CSS Modules
+import "../styles/Logo.css";
 
 const Logo: React.FC = () => {
   return (
@@ -11,6 +11,8 @@ const Logo: React.FC = () => {
           alt="logo"
           width={2000}
           height={1657}
+          priority
+          fetchPriority="high"
           className="logo"
         />
       </div>
