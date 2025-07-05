@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     "Pàgina oficial de L’ossa bàsquet. Troba informació del club, contacta amb nosaltres i descobreix la nostra indumentària.",
   robots: "index, follow",
   icons: {
-    icon: "/LogoPestana.png",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/LogoPestana.png", type: "image/png", sizes: "32x32" },
+    ],
   },
   openGraph: {
     title: "L’OSSA Bàsquet",
