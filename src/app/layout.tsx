@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
-// Si usás componentes globales como Navbar, Footer, etc.
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -36,8 +34,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  verification: {
-    google: "Y76t4AarKrguz2OtZHY0hQldWm0TOAlcCS96lE5xZ74",
+  other: {
+    "google-site-verification": "Y76t4AarKrguz2OtZHY0hQldWm0TOAlcCS96lE5xZ74",
   },
 };
 
@@ -49,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="ca">
       <head>
-        {/* Structured Data (Organization) */}
+        {/* Structured Data: Organización */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -63,8 +61,7 @@ export default function RootLayout({
             }),
           }}
         />
-
-        {/* Structured Data (Website) */}
+        {/* Structured Data: Sitio web */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -82,8 +79,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {/* Componentes globales */}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} bg-white text-black`}
+      >
         <Navbar />
         {children}
         <Footer />
