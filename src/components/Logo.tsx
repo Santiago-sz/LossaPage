@@ -12,6 +12,7 @@ const Logo: React.FC = () => {
           width={2000}
           height={1657}
           className="logo"
+          priority
         />
       </div>
     </section>
