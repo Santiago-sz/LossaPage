@@ -11,8 +11,6 @@ const Logo: React.FC = () => {
           alt="logo"
           width={2000}
           height={1657}
-          priority
-          fetchPriority="high"
           className="logo"
         />
       </div>
