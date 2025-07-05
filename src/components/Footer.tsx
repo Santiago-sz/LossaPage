@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 import "../styles/Footer.css";
 
 const Footer: React.FC = () => {
@@ -31,9 +32,11 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/logo.png"
                 alt="Logo QuadraCode"
+                width={150} // Ajustá según tu diseño
+                height={50} // Ajustá según tu diseño
                 className="footer-logo"
               />
             </a>

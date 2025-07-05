@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import "../styles/NavBar.css";
 import "../styles/Botones.css";
 const Navbar: React.FC = () => {
@@ -37,9 +38,11 @@ const Navbar: React.FC = () => {
     >
       <div className="navbar-container">
         <a href="#" className="navbar-logo">
-          <img
+          <Image
             src="/logoNav-Photoroom.png"
             alt="Logo"
+            width={2000}
+            height={1657}
             className="navbar-logo-img"
           />
         </a>

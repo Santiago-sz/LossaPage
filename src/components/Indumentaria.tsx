@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import "../styles/Indumentaria.css";
 
 const Indumentaria: React.FC = () => {
@@ -27,7 +28,12 @@ const Indumentaria: React.FC = () => {
 
         <div className="indumentaria-grid">
           <div className="card" onClick={() => window.open("#", "_blank")}>
-            <img src="/indumentaria-casual.jpg" alt="Indumentaria Casual" />
+            <Image
+              src="/indumentaria-casual.jpg"
+              alt="Indumentaria Casual"
+              width={2481}
+              height={2955}
+            />{" "}
           </div>
 
           <div className="texto-indumentaria">
@@ -42,7 +48,12 @@ const Indumentaria: React.FC = () => {
           </div>
 
           <div className="card" onClick={() => window.open("#", "_blank")}>
-            <img src="/uniformes-basquet.jpg" alt="Uniformes de Básquet" />
+            <Image
+              src="/uniformes-basquet.jpg"
+              alt="Uniformes de Básquet"
+              width={2481}
+              height={3098}
+            />{" "}
           </div>
         </div>
       </div>
