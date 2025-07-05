@@ -1,0 +1,67 @@
+/* --------- Reset básico --------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* --------- HTML y Body --------- */
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  font-family: "Geist", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* --------- Imágenes --------- */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* --------- Enlaces --------- */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --------- Botones --------- */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* --------- Inputs --------- */
+input,
+textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* --------- Listas --------- */
+ul,
+ol {
+  list-style: none;
+}
+
+/* --------- Scrollbar personalizada (opcional) --------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
