@@ -1,0 +1,102 @@
+.btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-contacto {
+  background-color: #b852a7;
+  color: #1e293b;
+  border: 1px solid #ac3297;
+  user-select: none;
+}
+
+.btn-contacto::before {
+  content: "";
+  position: absolute;
+  background: #851873;
+  height: 150px;
+  width: 200px;
+  top: 100%;
+  left: 100%;
+  transform: rotate(45deg);
+  transition: all 0.7s ease;
+  z-index: -1;
+}
+
+.btn-contacto:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.btn-contacto:active::before {
+  background: #9ca3af;
+  transition: background 0s;
+}
+
+.btn-indumentaria {
+  background-color: #f1f1f1;
+  color: #1e293b;
+  border: 1px solid #d1d5db;
+  user-select: none;
+}
+
+.btn-indumentaria::before {
+  content: "";
+  position: absolute;
+  background: #d1d5db;
+  height: 150px;
+  width: 200px;
+  top: 100%;
+  left: 100%;
+  transform: rotate(45deg);
+  transition: all 0.7s ease;
+  z-index: -1;
+}
+
+.btn-indumentaria:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.btn-indumentaria:active::before {
+  background: #9ca3af;
+  transition: background 0s;
+}
+
+.btn-enviar {
+  background-color: #ac3297;
+  color: #ffffff;
+  border: 1px solid #ac3297;
+  user-select: none;
+}
+
+.btn-enviar::before {
+  content: "";
+  position: absolute;
+  background: #851873;
+  height: 150px;
+  width: 200px;
+  top: 100%;
+  left: 100%;
+  transform: rotate(45deg);
+  transition: all 0.7s ease;
+  z-index: -1;
+}
+
+.btn-enviar:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.btn-enviar:active::before {
+  background: #851873;
+  transition: background 0s;
+}
