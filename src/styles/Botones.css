@@ -76,27 +76,69 @@
   color: #ffffff;
   border: 1px solid #ac3297;
   user-select: none;
+  position: relative;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(172, 50, 151, 0.2);
+  transform: translateY(0);
 }
 
 .btn-enviar::before {
   content: "";
   position: absolute;
-  background: #851873;
+  background: linear-gradient(45deg, #851873, #ac3297);
   height: 150px;
   width: 200px;
   top: 100%;
   left: 100%;
   transform: rotate(45deg);
-  transition: all 0.7s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: -1;
+  opacity: 0.9;
+}
+
+.btn-enviar:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(172, 50, 151, 0.3);
+  border-color: #d946ef;
 }
 
 .btn-enviar:hover::before {
   top: -30px;
   left: -30px;
+  opacity: 1;
+}
+
+.btn-enviar:active {
+  transform: translateY(0) scale(0.98);
+  transition: transform 0.1s ease;
 }
 
 .btn-enviar:active::before {
-  background: #851873;
-  transition: background 0s;
+  background: linear-gradient(45deg, #6b1456, #851873);
+  transition: background 0.1s ease;
+}
+
+.btn-enviar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-enviar:hover::after {
+  left: 100%;
 }

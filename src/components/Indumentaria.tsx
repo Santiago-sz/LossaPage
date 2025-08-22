@@ -27,7 +27,7 @@ const Indumentaria: React.FC = () => {
         </div>
 
         <div className="indumentaria-grid">
-          <div className="card" onClick={() => window.open("#", "_blank")}>
+          <div className="card">
             <Image
               src="/indumentaria-casual.jpg"
               alt="Indumentaria Casual"
@@ -37,9 +37,7 @@ const Indumentaria: React.FC = () => {
           </div>
 
           <div className="texto-indumentaria">
-            <h2 onClick={() => window.open("#", "_blank")}>
-              Vesteix-te com un ós
-            </h2>
+            <h2>Vesteix-te com un ós</h2>
             <p>
               Descobriu la nostra col·lecció exclusiva d&apos;indumentària
               esportiva. Dissenys únics que combinen estil i funcionalitat
@@ -47,7 +45,7 @@ const Indumentaria: React.FC = () => {
             </p>
           </div>
 
-          <div className="card" onClick={() => window.open("#", "_blank")}>
+          <div className="card">
             <Image
               src="/uniformes-basquet.jpg"
               alt="Uniformes de Básquet"
