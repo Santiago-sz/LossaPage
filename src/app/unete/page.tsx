@@ -20,7 +20,7 @@ export default function UnetePage() {
               <ul>
                 <li>📧 Email: admin@lossabasquet.com</li>
                 <li>📱 WhatsApp: +376 669363</li>
-                <li>📍 Ubicació: Pavelló d'Encamp</li>
+                <li>📍 Ubicació: Pavelló d&apos;Encamp</li>
               </ul>
             </div>
             
