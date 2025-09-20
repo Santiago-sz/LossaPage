@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "../../components/NavBar";
-import Footer from "../../components/Footer";
+import Link from "next/link";
 import "../../styles/Unete.css";
 import "../../styles/Botones.css";
 
@@ -9,7 +8,7 @@ export default function UnetePage() {
     <div className="app">
       <div className="unete-container">
         <div className="unete-content">
-          <h1 className="unete-title">¡Únete a L'ossa bàsquet!</h1>
+          <h1 className="unete-title">¡Únete a L&apos;ossa bàsquet!</h1>
           <p className="unete-subtitle">
             Forma part de la nostra família esportiva
           </p>
@@ -17,7 +16,7 @@ export default function UnetePage() {
           <div className="unete-info">
             <div className="info-card">
               <h3>Informació de Contacte</h3>
-              <p>Per unir-te al club, contacta'ns:</p>
+              <p>Per unir-te al club, contacta&apos;ns:</p>
               <ul>
                 <li>📧 Email: admin@lossabasquet.com</li>
                 <li>📱 WhatsApp: +376 669363</li>
@@ -50,9 +49,9 @@ export default function UnetePage() {
             >
               Descarga de formulario
             </a>
-            <a href="/" className="btn btn-indumentaria">
-              Tornar a l'inici
-            </a>
+            <Link href="/" className="btn btn-indumentaria">
+              Tornar a l&apos;inici
+            </Link>
           </div>
         </div>
       </div>
