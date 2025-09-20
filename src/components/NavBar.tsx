@@ -23,10 +23,11 @@ const Navbar: React.FC = () => {
   const navLinks = [
     {
       label: "Indumentària",
-      href: "#indumentaria",
+      href: "/#indumentaria",
       classname: "btn btn-indumentaria",
     },
-    { label: "Contacta'ns", href: "#contacto", classname: "btn btn-contacto" },
+    { label: "Contacta'ns", href: "/#contacto", classname: "btn btn-contacto" },
+    { label: "Únete", href: "/unete", classname: "btn btn-unete" },
   ];
 
   return (

@@ -67,24 +67,38 @@
   transition: all 0.3s ease;
 }
 
-.navbar-links a[href="#contacto"] {
+.navbar-links a[href="#contacto"],
+.navbar-links a[href="/#contacto"] {
   background-color: #ec4899;
   color: white;
 }
 
-.navbar-links a[href="#contacto"]:hover {
+.navbar-links a[href="#contacto"]:hover,
+.navbar-links a[href="/#contacto"]:hover {
   background-color: #db2777;
 }
 
-.navbar-links a[href="#indumentaria"] {
+.navbar-links a[href="#indumentaria"],
+.navbar-links a[href="/#indumentaria"] {
   background-color: #f1f1f1;
   color: #1e293b;
   border: 1px solid #d1d5db;
 }
 
-.navbar-links a[href="#indumentaria"]:hover {
+.navbar-links a[href="#indumentaria"]:hover,
+.navbar-links a[href="/#indumentaria"]:hover {
   background-color: #e5e7eb;
   color: #111827;
+}
+
+.navbar-links a[href="/unete"] {
+  background-color: #3b82f6;
+  color: white;
+  border: 1px solid #2563eb;
+}
+
+.navbar-links a[href="/unete"]:hover {
+  background-color: #2563eb;
 }
 
 .mobile-menu {

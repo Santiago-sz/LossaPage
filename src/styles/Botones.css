@@ -101,6 +101,36 @@
   opacity: 0.9;
 }
 
+.btn-unete {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+  user-select: none;
+}
+
+.btn-unete::before {
+  content: "";
+  position: absolute;
+  background: #1d4ed8;
+  height: 150px;
+  width: 200px;
+  top: 100%;
+  left: 100%;
+  transform: rotate(45deg);
+  transition: all 0.7s ease;
+  z-index: -1;
+}
+
+.btn-unete:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.btn-unete:active::before {
+  background: #1e40af;
+  transition: background 0s;
+}
+
 .btn-enviar:hover {
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 8px 25px rgba(172, 50, 151, 0.3);
