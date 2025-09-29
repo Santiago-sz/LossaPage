@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
       classname: "btn btn-indumentaria",
     },
     { label: "Contacta'ns", href: "/#contacto", classname: "btn btn-contacto" },
-    { label: "Únete", href: "/unete", classname: "btn btn-unete" },
+    { label: "Uneix-te", href: "/unete", classname: "btn btn-unete" },
   ];
 
   return (
