@@ -8,7 +8,7 @@ export default function UnetePage() {
     <div className="app">
       <div className="unete-container">
         <div className="unete-content">
-          <h1 className="unete-title">¡Únete a L&apos;ossa bàsquet!</h1>
+          <h1 className="unete-title">¡Uneix-te a L&apos;ossa bàsquet!</h1>
           <p className="unete-subtitle">
             Forma part de la nostra família esportiva
           </p>
@@ -25,7 +25,7 @@ export default function UnetePage() {
             </div>
             
             <div className="info-card">
-              <h3>Instruccions</h3>
+              <h3>Com inscriure's</h3>
               <p>Una vegada descarregat el formulari, completar-lo i enviar-lo per correu electrònic a:</p>
               <div style={{ 
                 background: 'rgba(59, 130, 246, 0.1)', 
@@ -47,7 +47,7 @@ export default function UnetePage() {
               className="btn btn-contacto"
               download="Pagament-autoritzacion.pdf"
             >
-              Descarga de formulario
+              Descarrega el formulari
             </a>
             <Link href="/" className="btn btn-indumentaria">
               Tornar a l&apos;inici
