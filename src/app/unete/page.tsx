@@ -25,7 +25,7 @@ export default function UnetePage() {
             </div>
             
             <div className="info-card">
-              <h3>Com inscriure's</h3>
+              <h3>{"Com inscriure's"}</h3>
               <p>Una vegada descarregat el formulari, completar-lo i enviar-lo per correu electrònic a:</p>
               <div style={{ 
                 background: 'rgba(59, 130, 246, 0.1)', 
